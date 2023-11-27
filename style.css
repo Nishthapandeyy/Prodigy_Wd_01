@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#firstpage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://media.istockphoto.com/id/503044702/photo/illuminated-sky-and-outside-of-waterfront-buiding.jpg?s=2048x2048&w=is&k=20&c=QAssSmAYUlEzWcs8691KIk_568axAFULXRzPUuQPRdw=);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.container {
+    padding: 25px;
+    margin: 25px;
+}
+
+.name {
+    font-size: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a:link,
+a:visited {
+    background-color: white;
+    color: black;
+}
+
+nav ul li a:hover,
+a:active {
+    background-color: orange;
+    color: white;
+}
+
+.headertext {
+    font-size: 35px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.headertext p span {
+    color: red;
+    font-weight: 900;
+    
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    color: blue;
+    background-color: orange;
+    font-weight: 900;
+    font-size: var(--text);
+    padding: 10px;
+    
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.response {
+    color:blue;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 50px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+}
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+}
+.para{
+    color: green;
+    font-weight: bold ;
+}
+

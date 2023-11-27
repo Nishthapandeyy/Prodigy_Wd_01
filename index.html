@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page infotech</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="firstpage">
+        <div class="bucket">
+            <nav>
+                <h1 class="name">Navya</h1>
+                <div class="hamburger-icon" style="position: absolute; right: 20px;" onclick="toggleNav()">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="headertext" >
+            <p>You are at your comfort place</p>
+            <p>Welcome! to the<span>NAVYA VILLA</span></p>
+            <p class="response">Your comfort is our respoonsibility!</p>
+            <button class="btn">Register NOW</button>
+        </div>
+    </div>
+    <script>
+        function toggleNav() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
